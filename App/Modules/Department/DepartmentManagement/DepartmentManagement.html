@@ -1,0 +1,48 @@
+﻿<div class="container-fluid" id="page-wrapper">
+
+    <div class=" panel panel-success">
+        <div class="panel-heading">
+            <b>{{'Searchcriteria' | translate}}</b>
+        </div>
+        <form role="form">
+            <div class="panel-body">
+                <div class="form-group">
+                    <label>{{'Department' | translate}}</label>
+                    <input type="text" class="form-control" data-ng-model="Department.Name" placeholder="{{'DepartmentName'|translate}}" />
+                </div>
+             
+            </div>
+            <div class="panel-footer clearfix">
+                <div class="pull-right">
+                    <button class="btn btn-success" data-ng-click="Search()">{{'Search' | translate}}</button>
+                    <button class="btn btn-danger" data-ng-click="Reset()">{{'Reset' | translate}}</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+    <div class="panel panel-default clearfix">
+        <div class="panel-heading">{{'Departments' |translate}}</div>
+        <div class="table-responsive">
+            <table data-datatable="ng" data-dt-options="dtOptions" data-dt-column-defs="dtColumnDefs" class="table table-striped table-bordered table-hover">
+                <thead>
+                    <tr>
+                        <th><button class="btn btn-success btn-xs" data-ng-click="DepartmentAddEdit({}, false)"><i class="glyphicon glyphicon-plus"></i>&nbsp; {{'Add'|translate}}</button></th>
+                        <th>{{'Department'|translate}}</th>
+                        <th>{{'IsParent'|translate}}</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr data-ng-repeat="dep in Department">
+                        <td><button class="btn btn-warning btn-xs" data-ng-click="DepartmentAddEdit(dep, true)"><i class="glyphicon glyphicon-edit"></i>&nbsp; {{'Add'|translate}}</button></td>
+                        <td>{{dep.Name}}</td>
+                        <td>{{dep.IsParent}}</td>
+                     
+                        <td><button class="btn btn-danger btn-xs" data-ng-click="DepartmentDelete(dep)"><i class="glyphicon glyphicon-trash"></i>&nbsp; {{'Delete'|translate}}</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

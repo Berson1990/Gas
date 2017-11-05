@@ -1,0 +1,47 @@
+﻿<form name="frm" class="form-horizontal" novalidate>
+    <div class="modal-header">
+        <button type="button" class="close" data-ng-click="Cancel()" aria-hidden="true">×</button>
+        <h3 class="modal-title">
+            <span data-ng-show="IsEditMode"><i class="glyphicon glyphicon-edit"></i>&nbsp;{{'Edit'|translate}}</span>
+            <span data-ng-hide="IsEditMode"><i class="glyphicon glyphicon-plus"></i>&nbsp;{{'Add'|translate}}</span>
+        </h3>
+    </div>
+
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group" data-ng-class="{ 'has-error' : frm.$submitted && frm.Code.$invalid }">
+                    <label class="col-md-4 control-label">{{'Department'|translate}}</label>
+                    <div class="col-md-8">
+                        <input type="text" name="Code" class="form-control" data-ng-model="Department.Name" required />
+                        <p class="help-block" data-ng-show="frm.$submitted && frm.Code.$error.required">{{'DepartmentName'|translate}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group" data-ng-class="{ 'has-error' : frm.$submitted && frm.Activate.$invalid }">
+                        <label class="col-md-4 control-label">{{'IsParent'|translate}}</label>
+                        <div class="col-md-8">
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="Activate" data-ng-value="true" ng-model="Department.IsParent" ng-required="!Department.IsParent">{{'Yes'|translate}}
+                                </label>
+                            </div>
+                            <div class="radio">
+                                <label>
+                                    <input type="radio" name="Activate" data-ng-value="false" ng-model="Department.IsParent" ng-required="!Department.IsParent">{{'No'|translate}}
+                                </label>
+                            </div>
+                            <p class="help-block" data-ng-show="frm.$submitted && frm.Activate.$error.required"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="modal-footer">
+        <button class="btn btn-success" data-ng-click="Save()"><i class="fa fa-save"></i>&nbsp;{{'Save'|translate}}</button>
+        <button class="btn" data-ng-click="Cancel()"><i class="fa fa-close"></i>&nbsp;{{'Close'|translate}}</button>
+    </div>
+</form>

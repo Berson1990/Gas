@@ -1,0 +1,11 @@
+{
+  "name": "alexfsep_front",
+  "version": "1.0.0",
+  "description": "front end application develop by angular1 js ",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aslexfsep",
+  "license": "ISC"
+}
