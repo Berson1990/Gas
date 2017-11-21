@@ -1,0 +1,28 @@
+[debug] [2017-11-05T14:05:01.295Z] ----------------------------------------------------------------------
+[debug] [2017-11-05T14:05:01.299Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\hesham\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] [2017-11-05T14:05:01.300Z] CLI Version:   3.14.0
+[debug] [2017-11-05T14:05:01.300Z] Platform:      win32
+[debug] [2017-11-05T14:05:01.300Z] Node Version:  v6.10.3
+[debug] [2017-11-05T14:05:01.301Z] Time:          Sun Nov 05 2017 16:05:01 GMT+0200 (Egypt Standard Time)
+[debug] [2017-11-05T14:05:01.301Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-11-05T14:05:01.320Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-11-05T14:05:01.320Z] > authorizing via signed-in user
+[debug] [2017-11-05T14:05:01.324Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/gasksa-de4ab  
+ Sun Nov 05 2017 16:05:01 GMT+0200 (Egypt Standard Time)
+[debug] [2017-11-05T14:05:02.816Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-05T14:05:02.819Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/gasksa-de4ab/tokens  
+ Sun Nov 05 2017 16:05:02 GMT+0200 (Egypt Standard Time)
+[debug] [2017-11-05T14:05:09.256Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from 'G:\AlexForProgApps\Gas'...
+[info] 
+[debug] [2017-11-05T14:05:09.271Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/gasksa-de4ab  
+ Sun Nov 05 2017 16:05:09 GMT+0200 (Egypt Standard Time)
+[debug] [2017-11-05T14:05:10.323Z] <<< HTTP RESPONSE 200
+[debug] [2017-11-05T14:05:10.325Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/193816669511/clients/_:getWebAppConfig  
+ Sun Nov 05 2017 16:05:10 GMT+0200 (Egypt Standard Time)
+[debug] [2017-11-05T14:05:11.595Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: ./
+[info] +  hosting: Local server: http://localhost:5000
+

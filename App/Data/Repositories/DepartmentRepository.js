@@ -2,9 +2,9 @@
     'use strict';
 
     angular.module('Data').factory('DepartmentRepository', DepartmentRepository);
-    DepartmentRepository.$inject = ['$http','Port'];
+    DepartmentRepository.$inject = ['$http','Port','$scope', '$firebaseObject'];
 
-    function DepartmentRepository($http,Port) {
+    function DepartmentRepository($http,Port,$scope, $firebaseObject) {
     //   var port = 8080;  
       var url= 'http://localhost:'+Port.port+'/ALXFSEP/public/department'
 //     var url = 'http://alxfsep.us-west-2.elasticbeanstalk.com/ALXFSEP/public/department'
@@ -48,7 +48,14 @@
                 }).success(function (data, status, headers, config) {
                     return data;
                 });
-            },
+            },Test: function () {
+
+                    var ref = firebase.database().ref();
+                    // download the data into a local object
+                    $scope.data = $firebaseObject(ref);
+                    // putting a console.log here won't work, see below
+
+            }
         };
     }
 })();

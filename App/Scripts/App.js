@@ -21,9 +21,9 @@
 	   , 'ngCookies'
 	   , 'pascalprecht.translate'
         , 'angularFileUpload'
-        , 'LocalStorageModule'
-        
-	]);
+        , 'LocalStorageModule','firebase'
+	]
+    );
     
 //     angular.module("App", []).factory('HazMasterReturn',function(){
 //		 return{

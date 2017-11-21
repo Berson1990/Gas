@@ -4,8 +4,22 @@
   "description": "front end application develop by angular1 js ",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "author": "aslexfsep",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.6",
+    "angularfire": "^2.3.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Berson1990/Gas.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Berson1990/Gas/issues"
+  },
+  "homepage": "https://github.com/Berson1990/Gas#readme"
 }
